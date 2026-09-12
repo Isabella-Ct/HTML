@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 270px;
+    width: 270px;
+}
+
+main>div{
+    background-color: blue;
+    height: 90px;
+    width: 90px;
+}

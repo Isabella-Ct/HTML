@@ -3,16 +3,43 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
 
 main{
-    display: flex;
-    flex-wrap: wrap;
-    height: 270px;
-    width: 270px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
 }
 
 main>div{
     background-color: blue;
-    height: 90px;
-    width: 90px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>div>h1{
+    color: white;
+    font-family: sans-serif;
+}
+
+#caja5{
+    background-color: red;
+    grid-column: span 2;
+    width: 405px;
+}
+
+#caja1{
+    background-color: green;
+    grid-row: span 2;
+    height: 405px;
 }
